@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:400,500,700,900&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--Header-->
-    <header>
+    <header class="page-header">
       <nav>
-        <a lang="en" href="">Web Studio</a>
+        <a lang="en" href="./index.html" class="logo">
+          <span class="logo-web">Web</span> Studio</a
+        >
 
-        <ul>
+        <ul class="site-nav">
           <li>
-            <a href="">Студия</a>
+            <a href="./index.html">Студия</a>
           </li>
           <li>
-            <a href="">Портфолио</a>
+            <a href="./portfolio.html">Портфолио</a>
           </li>
           <li>
             <a href="">Контакты</a>
           </li>
         </ul>
-        <ul lang="en">
+        <ul lang="en" class="contacts-nav">
           <li>
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -37,9 +44,9 @@
 
     <main>
       <!--Content-->
-      <section>
-        <h1>эффективные решения для вашего бизнеса</h1>
-        <a href="">Заказать услугу</a>
+      <section class="hero-title">
+        <h1 class="hero-text">эффективные решения для вашего бизнеса</h1>
+        <a class="button" href="">Заказать услугу</a>
       </section>
 
       <!--Features-->
@@ -47,43 +54,55 @@
         <!--Сделать в CSS невидимым-->
         <h2 lang="en">Features</h2>
 
-        <ul>
+        <ul class="features">
           <li>
             <a href="">
-              <img src="./images/antenna1.svg" alt="Спутник" />
+              <img
+                class="features-icon"
+                src="./images/antenna1.svg"
+                alt="Спутник"
+              />
             </a>
-            <h3>Внимание к деталям</h3>
-            <p>
+            <h3 class="features-title">Внимание к деталям</h3>
+            <p class="features-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
             <a href="">
-              <img src="./images/clock1.svg" alt="Часы" />
+              <img class="features-icon" src="./images/clock1.svg" alt="Часы" />
             </a>
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="features-title">Пунктуальность</h3>
+            <p class="features-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
             <a href="">
-              <img src="./images/diagram1.svg" alt="Диаграмма" />
+              <img
+                class="features-icon"
+                src="./images/diagram1.svg"
+                alt="Диаграмма"
+              />
             </a>
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="features-title">Планирование</h3>
+            <p class="features-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
             <a href="">
-              <img src="./images/astronaut1.svg" alt="Космонавт" />
+              <img
+                class="features-icon"
+                src="./images/astronaut1.svg"
+                alt="Космонавт"
+              />
             </a>
-            <h3>Современные технологии</h3>
-            <p>
+            <h3 class="features-title">Современные технологии</h3>
+            <p class="features-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -92,132 +111,231 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <ul>
           <li>
-            <img src="./images/laptop.jpg" alt="Ноутбук" />
-            <h3>Десктопные приложения</h3>
+            <img
+              src="./images/laptop.jpg"
+              alt="Ноутбук"
+              width="380"
+              height="294"
+            />
+            <h3 class="section-task">Десктопные приложения</h3>
           </li>
           <li>
-            <img src="./images/phone.jpg" alt="Телефон" />
-            <h3>Мобильные приложения</h3>
+            <img
+              src="./images/phone.jpg"
+              alt="Телефон"
+              width="380"
+              height="294"
+            />
+            <h3 class="section-task">Мобильные приложения</h3>
           </li>
           <li>
-            <img src="./images/monitor.jpg" alt="Монитор" />
-            <h3>Дизайнерские решения</h3>
+            <img
+              src="./images/monitor.jpg"
+              alt="Монитор"
+              width="380"
+              height="294"
+            />
+            <h3 class="section-task">Дизайнерские решения</h3>
           </li>
         </ul>
       </section>
 
       <!--Our Team-->
-      <section>
-        <h2>Наша команда</h2>
+      <section class="section-team">
+        <h2 class="team-title">Наша команда</h2>
         <ul lang="en">
           <li>
-            <img src="./images/johnsmith.jpg" alt="John Smith" />
-            <h3>John Smith</h3>
-            <p>Product Designer</p>
+            <img
+              src="./images/johnsmith.jpg"
+              alt="John Smith"
+              width="278"
+              height="260"
+            />
+            <h3 class="team-name">John Smith</h3>
+            <p class="team-position">Product Designer</p>
             <ul>
               <li>
                 <a href="">
-                  <img src="./images/instagram2.svg" alt="Instagram" />
+                  <img
+                    class="section-icon"
+                    src="./images/instagram2.svg"
+                    alt="Instagram"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/twitter1.svg" alt="Twitter" />
+                  <img
+                    class="section-icon"
+                    src="./images/twitter1.svg"
+                    alt="Twitter"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/facebook1.svg" alt="Facebook" />
+                  <img
+                    class="section-icon"
+                    src="./images/facebook1.svg"
+                    alt="Facebook"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/linkedin.svg" alt="Linkedin" />
+                  <img
+                    class="section-icon"
+                    src="./images/linkedin.svg"
+                    alt="Linkedin"
+                  />
                 </a>
               </li>
             </ul>
           </li>
           <li>
-            <img src="./images/martastewart.jpg" alt="Marta Stewart" />
-            <h3>Marta Stewart</h3>
-            <p>Frontend Developer</p>
+            <img
+              src="./images/martastewart.jpg"
+              alt="Marta Stewart"
+              width="278"
+              height="260"
+            />
+            <h3 class="team-name">Marta Stewart</h3>
+            <p class="team-position">Frontend Developer</p>
             <ul>
               <li>
                 <a href="">
-                  <img src="./images/instagram2.svg" alt="Instagram" />
+                  <img
+                    class="section-icon"
+                    src="./images/instagram2.svg"
+                    alt="Instagram"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/twitter1.svg" alt="Twitter" />
+                  <img
+                    class="section-icon"
+                    src="./images/twitter1.svg"
+                    alt="Twitter"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/facebook1.svg" alt="Facebook" />
+                  <img
+                    class="section-icon"
+                    src="./images/facebook1.svg"
+                    alt="Facebook"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/linkedin.svg" alt="Linkedin" />
+                  <img
+                    class="section-icon"
+                    src="./images/linkedin.svg"
+                    alt="Linkedin"
+                  />
                 </a>
               </li>
             </ul>
           </li>
           <li>
-            <img src="./images/robertjakis.jpg" alt="Robert Jakis" />
-            <h3>Robert Jakis</h3>
-            <p>Marketing</p>
+            <img
+              src="./images/robertjakis.jpg"
+              alt="Robert Jakis"
+              width="278"
+              height="260"
+            />
+            <h3 class="team-name">Robert Jakis</h3>
+            <p class="team-position">Marketing</p>
             <ul>
               <li>
                 <a href="">
-                  <img src="./images/instagram2.svg" alt="Instagram" />
+                  <img
+                    class="section-icon"
+                    src="./images/instagram2.svg"
+                    alt="Instagram"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/twitter1.svg" alt="Twitter" />
+                  <img
+                    class="section-icon"
+                    src="./images/twitter1.svg"
+                    alt="Twitter"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/facebook1.svg" alt="Facebook" />
+                  <img
+                    class="section-icon"
+                    src="./images/facebook1.svg"
+                    alt="Facebook"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/linkedin.svg" alt="Linkedin" />
+                  <img
+                    class="section-icon"
+                    src="./images/linkedin.svg"
+                    alt="Linkedin"
+                  />
                 </a>
               </li>
             </ul>
           </li>
           <li>
-            <img src="./images/martindoe.jpg" alt="Martin Doe" />
-            <h3>Martin Doe</h3>
-            <p>UI Designer</p>
+            <img
+              src="./images/martindoe.jpg"
+              alt="Martin Doe"
+              width="278"
+              height=""
+            />
+            <h3 class="team-name">Martin Doe</h3>
+            <p class="team-position">UI Designer</p>
             <ul>
               <li>
                 <a href="">
-                  <img src="./images/instagram2.svg" alt="Instagram" />
+                  <img
+                    class="section-icon"
+                    src="./images/instagram2.svg"
+                    alt="Instagram"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/twitter1.svg" alt="Twitter" />
+                  <img
+                    class="section-icon"
+                    src="./images/twitter1.svg"
+                    alt="Twitter"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/facebook1.svg" alt="Facebook" />
+                  <img
+                    class="section-icon"
+                    src="./images/facebook1.svg"
+                    alt="Facebook"
+                  />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./images/linkedin.svg" alt="Linkedin" />
+                  <img
+                    class="section-icon"
+                    src="./images/linkedin.svg"
+                    alt="Linkedin"
+                  />
                 </a>
               </li>
             </ul>
@@ -227,36 +345,60 @@
 
       <!--Our Clients-->
       <section>
-        <h3>Постоянные клиенты</h3>
+        <h3 class="clients">Постоянные клиенты</h3>
         <ul>
           <li>
             <a href="">
-              <img src="./images/logo1.svg" alt="Логотип 1" />
+              <img
+                class="client-logo"
+                src="./images/logo1.svg"
+                alt="Логотип 1"
+              />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/logo2.svg" alt="Логотип 2" />
+              <img
+                class="client-logo"
+                src="./images/logo2.svg"
+                alt="Логотип 2"
+              />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/logo3.svg" alt="Логотип 3" />
+              <img
+                class="client-logo"
+                src="./images/logo3.svg"
+                alt="Логотип 3"
+              />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/logo4.svg" alt="Логотип 4" />
+              <img
+                class="client-logo"
+                src="./images/logo4.svg"
+                alt="Логотип 4"
+              />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/logo5.svg" alt="Логотип 5" />
+              <img
+                class="client-logo"
+                src="./images/logo5.svg"
+                alt="Логотип 5"
+              />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/logo6.svg" alt="Логотип 6" />
+              <img
+                class="client-logo"
+                src="./images/logo6.svg"
+                alt="Логотип 6"
+              />
             </a>
           </li>
         </ul>
@@ -264,14 +406,16 @@
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="footer">
       <!--Сделать невидимым в CSS-->
       <h2 lang="en">Contacts</h2>
-      <a lang="en" href="">Web Studio</a>
-      <address>
+      <a lang="en" href="" class="footer-logo">
+        <span class="logo-web">Web</span> Studio</a
+      >
+      <address class="address">
         г. Киев, пр-т Леси Украинки, 26
       </address>
-      <ul lang="en">
+      <ul lang="en" class="list-contacts">
         <li>
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -280,31 +424,47 @@
         </li>
       </ul>
       <!--Social-->
-      <b>присоединяйтесь</b>
+      <b class="social">присоединяйтесь</b>
       <ul lang="en">
         <li>
           <a href="">
-            <img src="./images/instagram2.svg" alt="Instagram" />
+            <img
+              class="social-icon"
+              src="./images/instagram2.svg"
+              alt="Instagram"
+            />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="./images/twitter1.svg" alt="Twitter" />
+            <img
+              class="social-icon"
+              src="./images/twitter1.svg"
+              alt="Twitter"
+            />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="./images/facebook1.svg" alt="Facebook" />
+            <img
+              class="social-icon"
+              src="./images/facebook1.svg"
+              alt="Facebook"
+            />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="./images/linkedin.svg" alt="Linkedin" />
+            <img
+              class="social-icon"
+              src="./images/linkedin.svg"
+              alt="Linkedin"
+            />
           </a>
         </li>
       </ul>
 
-      <p lang="en">2020 | Developed by GoIT Students</p>
+      <p lang="en" class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
