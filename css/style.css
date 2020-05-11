@@ -68,6 +68,14 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .site-nav-link.current {
+  color: var(--accent-color);
+}
+
+/* .site-nav a:active {
+  color: var(--accent-color);
+} */
+
 .contacts-nav a {
   color: var(--primary-text-color);
 
@@ -252,13 +260,17 @@ body {
 /* ПОРТФОЛИО */
 /* Main Container */
 /* Filters */
+
 .filter-button {
   background-color: #f5f4fa;
   color: var(--title-text-color);
 
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 .filter-button:hover {
